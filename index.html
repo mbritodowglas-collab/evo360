@@ -4,22 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EVO360 — Sistema de Treinamento Inteligente</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="manifest" href="manifest.json" />
+
+  <!-- Meta -->
   <meta name="theme-color" content="#0b0b0b" />
+  <meta name="description" content="Sistema de gestão e prescrição inteligente de treinos com base em neurociência.">
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
   <header class="header">
-    <img src="assets/img/logo.svg" alt="EVO360" class="logo" />
+    <img src="assets/img/logo.svg" alt="EVO360 Logo" class="logo" />
     <h1>EVO360</h1>
   </header>
 
   <main id="app">
-    <section class="welcome">
+    <section class="intro">
       <h2>Bem-vindo ao EVO360</h2>
       <p>Organize, prescreva e evolua com inteligência.</p>
-      <button onclick="navigateTo('pages/home.html')" class="btn">Entrar no Sistema</button>
+      <button onclick="navigateToHome()" class="btn-primary">Entrar no Sistema</button>
     </section>
   </main>
 
