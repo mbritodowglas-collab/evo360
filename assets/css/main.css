@@ -1,0 +1,77 @@
+/* ====== EVO360 BASE THEME ====== */
+:root {
+  --bg: #0b0b0b;
+  --primary: #b51d1d;
+  --text: #e5e5e5;
+  --accent: #e0a96d;
+  --radius: 12px;
+  --transition: 0.2s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.logo {
+  width: 50px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+/* INTRO SECTION */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+.intro h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.intro p {
+  color: var(--text);
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-primary:hover {
+  background: #d82626;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
