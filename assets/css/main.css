@@ -140,3 +140,125 @@ h1 {
 .quick-actions button:hover {
   background: #d92626;
 }
+
+:root {
+  --bg: #0b0b0b;
+  --primary: #b51d1d;
+  --text: #e5e5e5;
+  --accent: #e0a96d;
+  --radius: 12px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.logo {
+  width: 50px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+/* INTRO SECTION */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+.intro h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.intro p {
+  color: var(--text);
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.btn-primary:hover {
+  background: #d82626;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ==== PÁGINAS INTERNAS ==== */
+.container {
+  padding: 80px 20px 70px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.card h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
+.highlight {
+  border: 1px solid var(--primary);
+  background: rgba(181,29,29,0.1);
+}
+
+/* NAVBAR FIXA */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.navbar a {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  text-decoration: none;
+  flex: 1;
+}
+.navbar a.active {
+  color: var(--accent);
+}
+.navbar span {
+  display: block;
+  font-size: 0.7rem;
+}
