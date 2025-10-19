@@ -75,3 +75,68 @@ h1 {
   opacity: 0.7;
   border-top: 1px solid rgba(255,255,255,0.05);
 }
+
+/* === NAVBAR FIXA === */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.navbar a {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  text-decoration: none;
+  flex: 1;
+}
+.navbar a.active {
+  color: var(--accent);
+}
+.navbar span {
+  display: block;
+  font-size: 0.7rem;
+}
+
+/* === CARDS & CONTAINER === */
+.container {
+  padding: 80px 20px 70px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.card h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
+.highlight {
+  border: 1px solid var(--primary);
+  background: rgba(181,29,29,0.1);
+}
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+.quick-actions button {
+  background: var(--primary);
+  border: none;
+  border-radius: var(--radius);
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.quick-actions button:hover {
+  background: #d92626;
+}
